@@ -1,0 +1,93 @@
+:root {
+    --color-orange : #FE7A36;
+    --color-light-navy : #3652AD;
+    --color-dark-navy : #280274;
+    --color-blue-white : #E9F6FF;
+}
+
+
+/* header styling */
+
+header {
+    text-align : center;
+    background-color: var(--color-dark-navy);
+    color: var(--color-blue-white);
+    margin : 15px 20px;
+    
+}
+
+header > * {
+    margin : 0px;
+    padding : 10px;
+}
+
+header > h4 {
+    padding-top : 0px;
+}
+
+/* main styling */
+
+.main_screen {
+    display: flex;   
+    flex-direction : row;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+
+.main_screen > .main_screen_center {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_screen > .main_screen_center > #win-loss {
+    position: absolute;
+    top : 20vh;
+}
+
+.main_screen > .main_screen_center > #vs_mark {
+    font-size : 50px;
+}
+
+.main_screen > .hand_image {
+    align-self : center;
+}
+
+
+/* sub screen styling */
+.selector {
+    list-style : none;
+    display: flex;
+    align-items: center;
+}
+
+.sub_screen {
+    display:flex;
+    justify-content: center;
+}
+
+.sub_screen > ul {
+    display : flex;
+    justify-content: space-between;
+    height : 100%;
+    padding-left : 0px;
+    border : 5px solid var(--color-light-navy);
+    margin : 0px;
+}
+
+.selector > i {
+    color : var(--color-orange);
+    font-size : 80px;
+    padding : 20px;
+}
+
+.hand_image > i {
+    color : var(--color-light-navy);
+    font-size : 150px;
+    padding : 20px 30px 20px 0px;
+}
+
+.mouse_entered_button {
+    background-color: var(--color-light-navy);
+}

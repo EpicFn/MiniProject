@@ -1,0 +1,108 @@
+
+:root {
+    --color--default : #1e56bd;
+}
+
+* {
+    cursor : default;
+}
+
+/*body*/
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#machine_body {
+    border : 3px solid black;
+    height : 600px;
+    width : 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.machine_header {
+    display:flex;
+    flex:1;
+    align-items: center;
+    border-bottom : 3px solid black;
+}
+
+.machine_header > .logo > i {
+    padding: 10px;
+    font-size: 30px;
+    color: var(--color--default);
+}
+
+.machine_header > .machine_title {
+    font-size: 20px;
+}
+
+/* screen */
+.machine_screen {
+    flex:4;    
+    display: flex;
+    flex-direction: column;
+}
+
+.machine_screen > * {
+    display : grid;
+    place-items: center end;
+    padding-right : 30px;
+    
+}
+
+.machine_screen > .post_calculation {
+    flex : 3;
+    font-size : 25px;
+    color: grey;
+    padding-top : 30px;
+}
+
+.machine_screen > .calculation {
+    flex : 5;
+    font-size : 40px;
+    padding-bottom : 50px;
+}
+
+
+/* keyboard */
+.machine_keyboard {
+    flex: 7;
+    display:flex;
+    flex-direction: column;
+}
+
+.button_line {
+    display:flex;
+    flex-direction: row;
+    padding : 0px;
+    flex:1;
+    margin: 0px;
+}
+
+.button_line > .button {
+    list-style : none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    flex:1;
+    margin : 2px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+.button.number_button, #plus_or_minus_button, #dot_button {
+    background-color: white;
+}
+
+.button.mouse_entered, 
+.button.mouse_entered#plus_or_minus_button, 
+.button.mouse_entered#dot_button {
+    background-color : black;
+    color : white;
+}
+

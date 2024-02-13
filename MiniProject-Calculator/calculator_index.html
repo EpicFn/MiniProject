@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator_style.css">
+</head>
+<body>
+    <div id="machine_body">
+        <header class="machine_header">
+            <div class="logo"><i class="fa-solid fa-calculator"></i></div>
+            <div class="machine_title">계산기</div>
+        </header>
+        <div class="machine_screen">
+            <div class="post_calculation">이전 값</div>
+            <div class="calculation">현재 값</div>
+        </div>
+        <div class="machine_keyboard">
+            <ul class="button_line">
+                <li class="button operator_button" id="percent_button">%</li>
+                <li class="button unactive_button" id="CE_button">CE</li>
+                <li class="button changing_button" id="C_button">C</li>
+                <li class="button changing_button" id="back_button">back</li>
+            </ul>
+            <ul class="button_line">
+                <li class="button changing_button" id="one_over_x_button">1/x</li>
+                <li class="button changing_button" id="x_squared_button">x^2</li>
+                <li class="button changing_button" id="root_button">root</li>
+                <li class="button operator_button" id="divison_button">/</li>
+            </ul>
+            <ul class="button_line">
+                <li class="button number_button" id="7_button">7</li>
+                <li class="button number_button" id="8_button">8</li>
+                <li class="button number_button" id="9_button">9</li>
+                <li class="button operator_button" id="multiplication_button">x</li>
+            </ul>
+            <ul class="button_line">
+                <li class="button number_button" id="4_button">4</li>
+                <li class="button number_button" id="5_button">5</li>
+                <li class="button number_button"id="6_button">6</li>
+                <li class="button operator_button" id="minus_button">-</li>
+            </ul>
+            <ul class="button_line">
+                <li class="button number_button" id="1_button">1</li>
+                <li class="button number_button" id="2_button">2</li>
+                <li class="button number_button" id="3_button">3</li>
+                <li class="button operator_button" id="plus_button">+</li>
+            </ul>
+            <ul class="button_line">
+                <li class="button changing_button" id="plus_or_minus_button">+/-</li>
+                <li class="button number_button" id="0_button">0</li>
+                <li class="button changing_button" id="dot_button">.</li>
+                <li class="button operator_button" id="equal_button">=</li>
+            </ul>
+        </div>
+    </div>
+    <script src="calculator_script.js"></script>
+    <script src="https://kit.fontawesome.com/a363eb9367.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+    <link rel="stylesheet" href="RSP_style.css">
+</head>
+<body>
+    <header>
+        <h1>가위바위보 게임</h1>
+        <h4>하단의 항목을 선택</h4>
+    </header>
+    <main class="game_screen">
+        <section class="main_screen">
+            <div class="hand_image" id="left_side_hand"><i></i></div>
+            <div class="main_screen_center">
+                <div id="win-loss">win/loss</div>
+                <div id="vs_mark">vs</div>
+            </div>
+            <div class="hand_image" id="right_side_hand"><i></i></div>
+        </section>
+        <section class="sub_screen">
+            <ul>
+                <li class="selector" id="rock_image"><i class="fa-regular fa-hand-back-fist"></i></li>
+                <li class="selector" id="scissors_image"><i class="fa-regular fa-hand-scissors"></i></li>
+                <li class="selector" id="paper_image"><i class="fa-regular fa-hand"></i></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="RSP_script.js"></script>
+    <script src="https://kit.fontawesome.com/a363eb9367.js" crossorigin="anonymous"></script>
+</body>
+</html>
